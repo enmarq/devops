@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "storage" {
-  name                = "asoteloterraformntier"
+  name                = "bsiuksipp01vhdstore"
   resource_group_name = "${azurerm_resource_group.ResourceGrps.name}"
 
   location     = "${azurerm_resource_group.ResourceGrps.location}"

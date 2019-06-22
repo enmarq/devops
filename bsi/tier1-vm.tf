@@ -1,8 +1,8 @@
 # Create virtal machine and define image to install on VM 
 
 resource "azurerm_virtual_machine" "tier1-vm" {
-  count = "3"
-  name  = "web-0${count.index + 1}"
+  count = "2"
+  name  = "bsiuksippweb-0${count.index + 1}"
 
   location = "${azurerm_resource_group.ResourceGrps.location}"
 
