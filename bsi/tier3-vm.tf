@@ -2,7 +2,7 @@
 
 resource "azurerm_virtual_machine" "tier3-vm" {
   count = "${var.counts}"
-  name  = "sql-0${count.index + 1}"
+  name  = "sql-0${count.index + 0}"
 
   location = "${azurerm_resource_group.ResourceGrps.location}"
 
